@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="itv-KD-soq">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="fdp-dK-1xh">
+            <objects>
+                <viewController storyboardIdentifier="signInController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ApZ-6m-y49" customClass="SISignInViewController" customModule="SignInExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="itv-KD-soq" kind="custom" identifier="signedIn" customClass="ChangeRootControllerSegue" id="x9T-Sz-ngJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dR6-Ug-Bar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="222"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="rD3-TO-rfk">
+            <objects>
+                <viewController storyboardIdentifier="mainController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="itv-KD-soq" customClass="SIMainViewController" customModule="SignInExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="ApZ-6m-y49" kind="custom" identifier="signedOut" customClass="ChangeRootControllerSegue" id="wHd-Xw-DaJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyK-qP-PNq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="1182"/>
+        </scene>
+    </scenes>
+</document>
